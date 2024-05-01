@@ -24,7 +24,7 @@ nav a:hover {
 
 header {
     padding:20px;
-    background-color: (var(--accent1-color));
+    background-color: var(--accent1-color);
 }
 
 p{
@@ -44,9 +44,9 @@ body{
 
 :root {
     --primary-color: #101935; /* Oxford Blue */
-    --secondary-color: #7FB7BE; /* Moonstone */
-    --accent1-color: #395B50; /* Felgrau */
-    --accent2-color:  #D3F3EE; /* Mint Green */
+    --secondary-color: #395B50; /* Felgrau */
+    --accent1-color: #D3F3EE; /* Mint Green */
+    --accent2-color: #7FB7BE; /* Moonstone */
     
     --heading-font: 'Archivo';
     --paragraph-font: 'Roboto', sans-serif;
