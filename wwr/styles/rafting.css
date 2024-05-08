@@ -1,0 +1,68 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.hero article {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with 70% opacity */
+    padding: 10px;
+    color: white;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+}
+
+
+:root {
+    --primary-color: #101935; /* Oxford Blue */
+    --secondary-color: #395B50; /* Felgrau */
+    --accent1-color: #D3F3EE; /* Mint Green */
+    --accent2-color: #7FB7BE; /* Moonstone */
+    
+    --heading-font: 'Archivo', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: var(--accent2-color);
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color: var(--accent1-color);
+}
+
+/* Styling headings and paragraph elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color); 
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+}
+
+/* Remove underlines from social media links */
+a.social-media-link {
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
