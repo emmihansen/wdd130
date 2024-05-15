@@ -1,47 +1,7 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
 
-
-
-
-
-.hero {
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px
-}
-
-
-.hero h1 {
-    position: absolute;
-    color: white;
-    font-size: 2em;
-    text-align: center;
-}
-
-.hero article {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark background with 70% opacity */
-    padding: 10px;
-    color: white;
-}
-
-.hero article img {
-    float: right;
-    margin-left: 10px;
-}
-
-
+/* Global styles */
 :root {
     --primary-color: #101935; /* Oxford Blue */
     --secondary-color: #395B50; /* Felgrau */
@@ -78,6 +38,7 @@ body {
     margin: 0 auto;
 }
 
+/* Header styles */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -102,6 +63,7 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
+/* Footer styles */
 footer {
     display: flex;
     justify-content: flex-end;
@@ -116,42 +78,99 @@ footer {
     gap: 10px;
 }
 
-/* Style for History section */
+.sociallinks a img {
+    width: 50px; /* Adjust the size of the social media icons */
+    height: auto;
+}
+
+/* Center the image and text in the history section */
+.history-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.history-image {
+    margin-bottom: 20px; /* Add space between the image and text */
+}
+
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    position: absolute;
+    color: rgb(17, 21, 62);
+    font-size: 2em;
+    text-align: center;
+}
+
+.hero article {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with 70% opacity */
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+}
+
+/* History section styles */
 section {
     padding: 20px;
     margin-bottom: 20px;
     background-color: #f8f8f8;
 }
 
-/* Style for History section heading */
 section h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333;
 }
 
-/* Style for History section paragraph */
 section p {
     font-size: 16px;
     line-height: 1.5;
     color: #666;
 }
 
-/* Style for Adventures section */
+/* Adventures section styles */
 .adventures {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 }
 
-/* Style for each adventure figure */
 .adventures figure {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Style for each adventure image */
 .adventures img {
     width: 100%;
     height: auto;
@@ -159,7 +178,6 @@ section p {
     margin-bottom: 5px;
 }
 
-/* Style for each adventure caption */
 .adventures figcaption {
     font-size: 14px;
     text-align: center;
