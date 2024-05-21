@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WDD 130 | HTML Form - User Poll</title>
-    <link rel="stylesheet" href="styles/poll-form.css"> <!-- Link to the CSS file -->
+    <meta name="description" content="Emmi Hansen's Quiz Form">
+    <meta name="author" content="Emmi Hansen">
+    <link rel="stylesheet" href="styles/quiz.css"> <!-- Link to the CSS file -->
 </head>
 <body>
 <header>
@@ -16,18 +18,18 @@
             <legend>Contact Information</legend>
             <div class="form-item column2">
                 <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required aria-label="Full Name">
+                <input type="text" id="q1" name="q1" required aria-label="Full Name">
             </div>
             <div class="form-item column2">
                 <label for="useremail">Email:</label>
-                <input type="email" id="useremail" name="useremail" required aria-label="Email">
+                <input type="email" id="q1" name="q1" required aria-label="Email">
             </div>
         </fieldset>
         <fieldset>
             <legend>Questions</legend>
             <div class="form-item column1">
                 <label for="browser">What is your favorite internet browser?</label>
-                <select id="browser" name="browser">
+                <select id="q2" name="q2">
                     <option value="chrome">Chrome</option>
                     <option value="firefox">Firefox</option>
                     <option value="safari">Safari</option>
@@ -38,11 +40,11 @@
             </div>
             <div class="form-item column1">
                 <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet">
+                <input type="checkbox" id="q3" name="q3">
             </div>
             <div class="form-item column1">
                 <label for="feedback">List the places you have lived:</label>
-                <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater, Florida; Amsterdam, Netherlands; Timbuktu, Mali"></textarea>
+                <textarea id="q4" name="q4" rows="4" placeholder="Stillwater, Florida; Amsterdam, Netherlands; Timbuktu, Mali"></textarea>
             </div>
         </fieldset>
         <button type="submit">Submit Poll</button>
