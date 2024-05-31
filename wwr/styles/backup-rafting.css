@@ -1,0 +1,185 @@
+ /* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+
+/* Global styles */
+:root {
+    --primary-color: #101935; /* Oxford Blue */
+    --secondary-color: #395B50; /* Felgrau */
+    --accent1-color: #D3F3EE; /* Mint Green */
+    --accent2-color: #7FB7BE; /* Moonstone */
+    
+    --heading-font: 'Archivo', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: var(--accent2-color);
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color: var(--accent1-color);
+}
+
+/* Styling headings and paragraph elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color); 
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+
+/* Remove underlines from social media links */
+a.social-media-link {
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--nav-background-color);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 10px;
+}
+
+.sociallinks a img {
+    width: 50px; /* Adjust the size of the social media icons */
+    height: auto;
+}
+
+/* Center the image and text in the history section */
+.history-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.history-image {
+    margin-bottom: 20px; /* Add space between the image and text */
+}
+
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    position: absolute;
+    color: rgb(17, 21, 62);
+    font-size: 2em;
+    text-align: center;
+}
+
+.hero article {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with 70% opacity */
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+}
+
+/* History section styles */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Adventures section styles */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.adventures figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.adventures figcaption {
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+}
