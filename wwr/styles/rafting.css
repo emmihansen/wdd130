@@ -20,12 +20,12 @@
 /* Styling headings and paragraph elements */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--secondary-color); 
+    color: #000000; 
 }
 
 p {
     font-family: var(--paragraph-font);
-    color: var(--primary-color);
+    color: #000000;
 }
 
 /* Remove underlines from social media links */
