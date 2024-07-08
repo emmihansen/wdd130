@@ -1,0 +1,359 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Roboto&display=swap');
+
+/* Global styles */
+:root {
+    --primary-color: #101935; /* Oxford Blue */
+    --secondary-color: #395B50; /* Felgrau */
+    --accent1-color: #D3F3EE; /* Mint Green */
+    --accent2-color: #7FB7BE; /* Moonstone */
+    
+    --heading-font: 'Archivo', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: var(--accent2-color);
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color: var(--accent1-color);
+}
+
+/* Styling headings and paragraph elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: #000000; 
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: #000000;
+}
+
+/* Remove underlines from social media links */
+a.social-media-link {
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--nav-background-color);
+}
+
+header img {
+    width: 80px; /* 20% smaller than the original 200px */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 20px;
+
+}
+
+nav a {
+    font-family: var(--heading-font); /* Use the same font as hero h1 */
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-size: 18px; /* Make text bigger */
+    font-weight: medium; 
+    margin-bottom: 20px; /* Position links at the bottom of the header */
+    margin-right: 15px; /* Adjust the space between the links */
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 10px;
+}
+
+.sociallinks a img {
+    width: 50px; /* Adjust the size of the social media icons */
+    height: auto;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.overlay-text-box {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 33%; /* 1/3 of the width of the image */
+    height: auto; /* Adjust height as needed */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with 70% opacity */
+    padding: 20px;
+    color: white;
+    text-align: left;
+    border-radius: 5px;
+}
+
+/* Styling for h1 and p inside the overlay-text-box */
+.overlay-text-box h1, .overlay-text-box p {
+    color: rgb(220, 225, 227);
+}
+
+/* Newsletter section styles */
+.newsletter {
+    padding: 20px;
+    background-color: var(--accent1-color);
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Call to Action section styles */
+.cta {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    width: 197%;
+}
+
+.cta h2 {
+    font-size: 54px;
+    margin-bottom: 40px;
+    color: white; /* Make this specific h2 white */
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+/* About section with CSS Grid */
+.about {
+    padding: 20px;
+    background-color: var(--accent2-color);
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.trips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.trip {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: var(--accent2-color); /* Light gray background */
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.trip figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.trip .description {
+    font-family: var(--heading-font); /* Use the same font as hero h1 */
+    color: var(--secondary-color);
+}
+
+.trip p {
+    margin-bottom: 10px;
+}
+
+.trip ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.trip button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.trip button:hover {
+    background-color: var(--secondary-color);
+}
+
+ul, li {
+    list-style-type: disc; /* Use disc bullets for unordered lists */
+}
+
+.description {
+    flex: 1;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.description p, .description ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.description ul {
+    padding-left: 20px;
+}
+
+/* Styling for the large Book Now button */
+.submit-button.large {
+    font-size: 24px; /* Increase the font size */
+    padding: 15px 30px; /* Adjust the padding */
+    background-color: var(--secondary-color); /* Use the secondary color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-button.large:hover {
+    background-color: var(--primary-color); /* Change background color on hover */
+    color: var(--accent1-color); /* Change text color on hover */
+}
+
+/* Styling for the reservation info paragraph */
+.reservation-info {
+    color: var(--secondary-color); /* Felgrau */
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.book-now {
+    text-align: center;
+}
+
+.book-now button {
+    padding: 5px 10px;
+    background-color:#395B50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-now button:hover {
+    background-color: #101935;
+}
+
+
